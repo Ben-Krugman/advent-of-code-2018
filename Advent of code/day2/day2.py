@@ -8,8 +8,12 @@ pair = 0
 third = 0  
 for x in inputList:
      c = Counter(x)
-     #This iterates through the key and value of c.items() and checks if any of them show up 2 times. 
-     #Then we get the length of this and see if its greater than 0 to see if it exists
+     
+     #c.items() returns a tuple of a letter and a number. The letter is a letter in the word and the number
+     #is how many times it shows up. What we are doing here is looping through the keys and on each key
+     #we check if the value is equal to either 2 or 3. If it is then we check if the length of thhe
+     #new list we made is greater than 0. The reason we do this is because if the length was 0 then there would
+     #be no tuple where the value is equal to 2 or 3. 
      if len([k for k,v in c.items() if v == 2]) > 0:
           pair += 1
      if len([k for k,v in c.items() if v == 3]) > 0:
