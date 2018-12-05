@@ -6,6 +6,7 @@ input.close()
 
 pair = 0 
 third = 0  
+
 for x in inputList:
      c = Counter(x)
      
